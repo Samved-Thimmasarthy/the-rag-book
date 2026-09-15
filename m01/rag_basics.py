@@ -75,3 +75,15 @@ print("=" * 60)
 print("WITH CONTEXT")
 print("=" * 60)
 print(ask_with_context(question, acme_context))
+
+
+print()
+
+print("=" * 60)
+print("CONTEXT DOES NOT CONTAIN ANSWER")
+print("=" * 60)
+
+missing_question = "What was Product Alpha's gross margin?"
+
+print(ask_with_context(missing_question, acme_context))
+
